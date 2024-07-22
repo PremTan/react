@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            /* width: 2048px; */
+            background-color: aqua;
+            border: 2px solid black;
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+        }
+
+        .box2 {
+            box-sizing: border-box;
+            background-color: aqua;
+            border: 2px solid black;
+            width: 80vw;
+            height: 80vh;
+            margin: 25px auto;
+            min-height: 80vh;
+
+        }
+
+        .box2 div{
+            /* font-size: 1.5em; */
+            font-size: 1.5rem;
+            width: 50%;
+            border: 2px solid rgb(219, 14, 14);
+        }
+
+        .box>div>div {
+            width: 50%;
+            border: 2px solid rgb(29, 17, 17);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        im the box
+    </div>
+    <div class="box2">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minus corrupti incidunt sunt ex ipsa? Quos
+            rem,
+            dicta blanditiis dolor omnis quod culpa odit aut praesentium totam fuga possimus est exercitationem natus
+            sint
+            beatae tenetur, perferendis adipisci eos deserunt fugiat ab vitae. Hic voluptatem quos libero perferendis,
+            minus
+            rerum nihil!
+            <div>
+                Prem ipsum, dolor sit amet consectetur adipisicing elit. Sed quas ut atque ullam in corrupti doloribus,
+                et
+                earum numquam a quidem, magnam quasi minus corporis veritatis placeat ipsa voluptate? Fugiat!
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
