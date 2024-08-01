@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="08_script.js"></script> -->
+</head>
+
+<body>
+    <h1>Js Tutorial</h1>
+    <script>
+        // if input = 1, "y", "yes"  output = continue....
+        // if input = 0, "n", "no"   output = End....
+
+        // by if else
+        /*let user = "1";
+        
+        if (user === 1 || user == "y" || user == "yes"){
+            document.write("continue....")
+        }
+        else if (user === 0 || user == "n" || user == "no"){
+            document.write("End....")
+        }
+        else{
+            document.write("Wrong input....")
+        }*/
+
+
+        // by switch case statement (when we want strict comarison)
+
+        let user = "n";
+        switch (user) {
+            case 1:
+            case "y":
+            case "yes":
+                document.write("Continue....")
+                break;
+            case 0:
+            case "n":
+            case "no":
+                document.write("End....")
+                break;
+            default:
+                document.write("Wrong input")
+        }
+    </script>
+</body>
+
+</html>

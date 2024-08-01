@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Js Tutorial</h1>
+    <script>
+        // functions to ineract with user : alert, prompt & confirm
+
+        // 1. alert() shows a message as popup.
+        alert("welcome");
+
+        // 2. prompt() shows a message, input text. It returns the text on ok or, if Cancal button or Esc is clicked, null.
+        let age = prompt("Enter your age :",20);
+        if (age != null){
+            document.write(`Your age is ${age}`);
+        }
+        else{
+            document.write('You have not filled your age');
+        }
+
+        // 3. confirm() shows a message, confirm with "OK" or "Cancel". It returns true for OK and false for Cancel/Esc.
+        let responce = confirm("Are you share u want to delete ?");
+        if(responce){
+            document.write(" Deleted");
+        }
+        else{
+            document.write(" Not deleted");
+        }
+
+
+        // Note: All these pause script execution and don't allow the visitor to interact with the rest of the page until the window has been dismissed.
+
+        
+
+        
+
+
+
+    </script>
+</body>
+
+</html>
