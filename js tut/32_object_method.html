@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Tutorial</h1>
+
+    <script>
+        // Object methods - 4.
+
+        let person = {
+            firstname : "Prem",
+            lastname : "Tandalekar",
+            sayhi : function (){     //3
+                console.log("hi");
+            },
+            sayHi (){
+                console.log("hi..");
+            }
+        };
+        person.age = 25;
+
+        // 1. 
+        person.sayHello = function(){
+            console.log("hello !");
+        }
+        person.sayHello();
+
+        // 2.
+        function greet(){
+            console.log("Hello..");
+        }
+        person.sayhello = greet;
+        person.sayhello();
+
+        // 3.
+        person.sayhi();
+
+        // 4. 
+        person.sayHi();
+
+
+
+    </script>
+</body>
+</html>

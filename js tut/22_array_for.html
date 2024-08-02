@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Tutorial</h1>
+    <script>
+        let book = ["Math", "Hindi", "English", "Chemistry"];
+        let booklength = book.length;
+        for(let i = 0; i < booklength; i++){
+            console.log(`Elements ${i} = ${book[i]}`);
+        }
+
+        book.forEach(myfun);
+
+        function myfun(value){
+            console.log(value);
+        }
+    </script>
+</body>
+</html>

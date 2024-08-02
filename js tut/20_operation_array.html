@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS tut</h1>
+    <script>
+        let book = ["Math","Physics","English","Hindi"];
+        // length
+        console.log(book.length);
+
+        // push() - add element to last
+        book.push("Chemistry");
+        console.log(book);
+        // unshift() - add element to first
+        book.unshift("Bio");
+        console.log(book);
+
+        // pop() - remove last element of array
+        book.pop();
+        console.log(book);
+        // shift() - remove element to first
+        book.shift();
+        console.log(book);
+        // splice(position, no.of element)
+        book.splice(1,2);
+        console.log(book)
+
+        // indexOf   - position know
+        console.log(book.indexOf("Hindi"));
+
+        // isArray
+        let a = "hindi"
+        console.log(Array.isArray(a));
+
+        // slpit()
+        let text = "This is a random text";
+        let wordArray = text.split(" ");
+        console.log(wordArray);
+
+        // join()
+        let books = ["Math","Physics","English","Hindi"];
+        console.log(books.join('-'));
+        
+        // concat() - concat multiple arrays
+        let books2 = ["Bio","Chemitry"];
+        let books3 = ["Punjabi"];
+        let newbook = books.concat(books2, books3);
+        console.log(newbook);
+
+        // reomve entire array
+        newbook = []
+        console.log(newbook)
+        // newbook.length = 0;
+        // console.log(newbook);
+    </script>
+</body>
+</html>

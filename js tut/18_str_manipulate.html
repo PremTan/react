@@ -1,0 +1,76 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JS tutorial</h1>
+    <script>
+        let a = "Vishwajeet";
+        let b = "Prem"
+        console.log(a + " " + b);
+    </script>
+
+    <!-- string concatenation -->
+    <script>
+        let str1 = "Prem";
+        let str2 = "Kumar";
+        let str3 = str1.concat(" ", str2);
+        console.log(str3);
+    </script>
+
+    <!-- substr -->
+    <script>
+        let str = "This is javascript tutorial. Its Good";
+        let substring = str.substr(8, 19);
+        console.log(substring);
+    </script>
+
+    <!-- substring -->
+    <script>
+        let st = "This is javascript tutorial. Its Good";
+        let substring1 = st.substring(8, 17);
+        console.log(substring1);
+    </script>
+
+    <!-- indexOf -->
+    <script>
+        let s = "This is javascript tutorial. It is Good";
+        let position = s.indexOf("is");
+        console.log(position);
+    </script>
+
+    <!-- (trim) remove whitespace -->
+     <!-- trimeStart & trimEnd -->
+    <script>
+        let x = " This is javascript tutorial. It is Good ";
+        console.log(x);
+        let trimx = x.trim();
+        console.log(trimx);
+    </script>
+
+    <!-- toUpperCase & toLowerCase -->
+     <script>
+        let y = x.toUpperCase();
+        console.log(y);
+        let z = x.toLowerCase();
+        console.log(z);
+     </script>
+
+     <!-- replace -->
+      <script>
+        let repl = x.replace("Good", "best");
+        console.log(repl);
+      </script>
+
+      <!-- includes -->
+       <script>
+        let incx = x.includes("javascript");
+        console.log(incx);
+       </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Tutorial</h1>
+    <script>
+        function add(){
+            let sum = 0;
+            for (let i=0; i<arguments.length; i++){
+                sum += arguments[i];
+            }
+            document.write(sum);
+        }
+        add(5,7);
+        document.write("<br>");
+        add(5,7,6);
+        document.write("<br>");
+        add(5,7,8,3);
+    </script>
+</body>
+</html>
