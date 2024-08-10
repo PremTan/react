@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heading {
+            color: blue;
+            background-color: yellow;
+        }
+
+        .heading {
+            color: brown;
+            background-color: rgb(234, 224, 212);
+        }
+
+        body {
+            background-color: aqua;
+        }
+
+        button {
+            background-color: rgb(135, 135, 226);
+        }
+    </style>
+</head>
+
+<body>
+    <div>abcd
+        <div>hii</div>
+        <p>ghqfh</p>
+    </div>
+    <h1 class="heading">DOM Demo by Apna College</h1>
+    <h1 class="heading">Javascript</h1>
+    <h4 class="heading">Topic 1 : Starter code</h4>
+    <p>Lets learn about DOM concepts</p>
+    <p>2nd paragraph</p>
+    <button id="mybtn">click me!</button>
+
+    <script>
+        // getElementById
+        let btn = document.getElementById("mybtn");
+        console.dir(btn);
+
+        // getElementsByClassName
+        let headings = document.getElementsByClassName("heading");
+        console.dir(headings);
+        console.log(headings);
+
+        // getElementsByTagName
+        let para = document.getElementsByTagName("p");
+        console.dir(para);
+
+        // querySelector by tagname
+        let firstEl = document.querySelector("p"); //first element
+        console.dir(firstEl);
+        let allEl = document.querySelectorAll("p"); //All elements
+        console.dir(allEl);
+
+        // querySelector by classname
+        let firstcls = document.querySelector(".heading"); //first class
+        console.dir(firstcls);
+        let allcls = document.querySelectorAll(".heading"); //All class
+        console.dir(allcls);
+
+        // querySelector by idname
+        let firstid = document.querySelector("#mybtn"); //first id
+        console.dir(firstid);
+
+        // tags
+        console.dir(firstEl.tagName);
+        console.dir(btn.tagName);
+        console.dir(firstcls.tagName);
+
+
+        console.log(document.querySelector("div"));
+        console.log(document.querySelector("div").children);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 200px;
+            width: 100px;
+            background-color: red;
+            color: white;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">This is a div
+        <ul>List :
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </div>
+    <p class="para">this is a simple line</p>
+
+    <script>
+        // insert elements
+        let newbtn = document.createElement("button");
+        console.log(newbtn);
+        newbtn.innerText = "click me!";
+        let p = document.querySelector("div");
+        p.before(newbtn);
+
+        let newheading = document.createElement("h1");
+        newheading.innerText = "Hey im new heading..";
+        document.querySelector("body").prepend(newheading);
+
+        // delete elements
+        let dl = document.querySelector("p");
+        dl.remove();
+        
+    </script>
+</body>
+
+</html>

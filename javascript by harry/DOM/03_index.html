@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        div h2 {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Old heading</h2>
+        <h3>Fruits : </h3>
+        <ul>
+            <li>Mango</li>
+            <li>Pineapple</li>
+            <li>Orange</li>
+        </ul>
+    </div>
+
+    <script>
+        let div = document.querySelector("div");
+        console.log(div);
+
+        console.log(div.innerText);
+        console.log(div.innerHTML);
+
+        let heading = document.querySelector("h2");
+        console.dir(heading);
+        heading.innerText = "New Heading";
+
+        console.log(heading.innerText);
+        console.log(heading.textContent);
+
+        // div.innerText = "abcd";
+        // console.log(div.innerText);
+    </script>
+</body>
+
+</html>

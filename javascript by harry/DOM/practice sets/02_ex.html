@@ -1,0 +1,32 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">first div</div>
+    <div class="box">second div</div>
+    <div class="box">third div</div>
+
+    <script>
+        let a = document.querySelectorAll(".box");
+        // console.dir(a[0]);
+        // console.dir(a[1]);
+        // console.dir(a[2]);
+
+        // a[0].innerText = "hi";
+        // a[1].innerText = "hello";
+        // a[2].innerText = "good Night";
+
+        indx = 1;
+        for (div of a) {
+            div.innerText = `Unique value of div ${indx}`
+            indx++;
+        }
+    </script>
+</body>
+
+</html>

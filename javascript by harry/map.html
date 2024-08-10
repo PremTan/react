@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Map function</h1>
+    <script>
+        let arr = [45, 23, 21];
+
+        let a = arr.map((value,index) => {
+            console.log(value, index);
+            return value + 1 ;      
+        });
+        console.log(a);
+    </script>
+
+
+    <h1>Filter function</h1>
+    <script>
+        let arr2 = [10,80,5,1,14,0,45];  
+        let a2 = arr2.filter(value => value <= 10);     
+        // we can write this way also when 1 line is there
+        console.log(a2);
+    </script>
+
+    <h1>Reduce method</h1>
+    <script>
+        let arr3 = [1,2,3,5,2,1];
+        let a3 = arr3.reduce((a, b) => a + b );
+        console.log(a3);
+    </script>
+
+</body>
+</html>

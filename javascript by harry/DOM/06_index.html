@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(5, 64, 64);
+            color: white;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">This is a div</div>
+    <p class="para">this is a simple line</p>
+
+    <script>
+        // style  -- node.style
+        let div = document.querySelector("div");
+        console.log(div);
+        console.log(div.style);
+        div.style.background = "red";
+        div.style.fontSize = "25px";
+        div.innerText = "Hello !";
+
+        
+    </script>
+</body>
+
+</html>

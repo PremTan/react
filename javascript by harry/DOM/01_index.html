@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: blue;
+            background-color: yellow;
+        }
+
+        body {
+            background-color: aqua;
+        }
+
+        button {
+            background-color: rgb(135, 135, 226);
+        }
+    </style>
+</head>
+
+<body>
+    <div>abcd</div>
+    <h1>DOM Demo by Apna College</h1>
+    <h5>Topic 1 : Starter code</h5>
+    <p>Lets learn about DOM concepts</p>
+    <button>click me!</button>
+
+    <script>
+        console.log("Hello !");
+
+        console.log(window.document);
+        console.dir(window.document);
+
+        console.log(document.body);
+        console.dir(document.body);
+
+        console.dir(document.body.childNodes[1]);
+
+        document.body.style.background = "red";
+
+        document.body.childNodes[3].innerText = "abcd";
+    </script>
+</body>
+
+</html>
